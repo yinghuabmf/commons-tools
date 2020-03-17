@@ -1,4 +1,4 @@
-package com.renmaitech.common.desensitization;
+package com.banban.common.desensitization;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

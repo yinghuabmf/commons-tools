@@ -1,4 +1,4 @@
-package com.renmaitech.common.desensitization;
+package com.banban.common.desensitization;
 
 import org.apache.commons.lang3.StringUtils;
 

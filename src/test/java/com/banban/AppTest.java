@@ -1,4 +1,4 @@
-package com.renmaitech;
+package com.banban;
 
 import static org.junit.Assert.assertTrue;
 
