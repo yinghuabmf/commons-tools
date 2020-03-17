@@ -1,4 +1,4 @@
-package cn.banban.common.desensitization;
+package com.renmaitech.common.desensitization;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

@@ -1,7 +1,5 @@
-package cn.banban.common.desensitization;
+package com.renmaitech.common.desensitization;
 
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.function.Function;
@@ -12,8 +10,8 @@ import java.util.function.Function;
  * @author : banxiaohua
  * @date : 2020/3/17 11:02 AM
  */
-@Slf4j
 public enum DesensitizationEnum {
+
 
     /**
      * 中文名
@@ -111,8 +109,11 @@ public enum DesensitizationEnum {
 
     });
 
-    @Getter
     private Function<String, String> function;
+
+    public Function<String, String> getFunction() {
+        return function;
+    }
 
     DesensitizationEnum(Function<String, String> function) {
         this.function = function;

@@ -1,6 +1,7 @@
-package cn.banban.common.desensitization;
+package com.renmaitech.common.desensitization;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.ReflectionUtils;
 
 import java.beans.PropertyDescriptor;
@@ -14,8 +15,9 @@ import java.util.List;
  * @author : banxiaohua
  * @date : 2020/3/17 10:12 AM
  */
-@Slf4j
 public class DesensitizationUtils {
+
+    private static final Logger logger = LoggerFactory.getLogger(DesensitizationUtils.class);
 
     /**
      * 脱敏
@@ -57,7 +59,7 @@ public class DesensitizationUtils {
                     wM.invoke(obj, newValue);
                 }
             } catch (Exception e) {
-                log.error("脱敏失败", e);
+                logger.error("脱敏失败", e);
             }
         });
         return obj;
